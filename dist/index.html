@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +9,131 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../src/output.css">
 </head>
-<body>
-    <h1 class="bg-red-400 text-3xl font-bold underline text-center p-4">Hello Tailwind</h1>
-    <h2 class="bg-blue-400">hello world</h2>
 
-    <div class="card">
-        <h3 class="text-base font-medium text-slate-900">This is a text element</h3>
-        <p class="mt-2 text-sm text-slate500">This is an even longer p tag element</p>
-        <h4 class="text-center bg-red-600 text-white">Heloo</h4>
-        
-        <button class="btn">Click Me</button>
+<body>
+    <div class="h-screen">
+        <header class="px-6 py-8">
+            <div class="flex items-center justify-between">
+                <img class="cursor-pointer" src="./images/logo.svg" alt="snap_logo">
+
+                <img class="cursor-pointer" id="menuOpen" src="./images/icon-menu.svg" alt="">
+
+                <ul class="hidden fixed top-0 right-0 h-screen w-[65%] py-8 px-6 bg-white z-50" id="links">
+
+                    <div class="flex flex-row-reverse">
+                        <img class="hidden cursor-pointer" id="menuClose" src="./images/icon-close-menu.svg" alt="">
+                    </div>
+
+                    <li class="navs mt-8">
+                        <div class="flex items-center gap-4">
+                            <p>Features</p>
+                            <span class="mt-2"><img src="./images/icon-arrow-down.svg" alt=""></span>
+
+                            <span class="hidden"><img src="./images/icon-arrow-up.svg" alt=""></span>
+                        </div>
+                        <ul class="hidden">
+                            <li>
+                                <span><img src="./images/icon-todo.svg" alt=""></span>
+                                Todo List
+                            </li>
+                            <li>
+                                <span><img src="./images/icon-calendar.svg" alt=""></span>
+                                Calendar
+                            </li>
+                            <li>
+                                <span><img src="./images/icon-reminders.svg" alt=""></span>
+                                Reminders
+                            </li>
+                            <li>
+                                <span><img src="./images/icon-planning.svg" alt=""></span>
+                                Planning
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="navs">
+                        <div class="flex items-center gap-4">
+                            <p>Company</p>
+                            <span class="mt-2"><img src="./images/icon-arrow-down.svg" alt=""></span>
+
+                            <span class="hidden"><img src="./images/icon-arrow-up.svg" alt=""></span>
+                        </div>
+                        <ul class="hidden">
+                            <li>History</li>
+                            <li>Our Team</li>
+                            <li>Blog</li>
+                        </ul>
+                    </li>
+                    <li class="navs">Careers</li>
+                    <li class="navs">About</li>
+
+                    <li class="navs mt-8">
+                        <div class="flex flex-col items-center gap-4">
+                            <a href="#">Login</a>
+                            <a class="regBtn" href="#">Register</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="hidden">
+                <a href="#">Login</a>
+                <a class="regBtn" href="#">Register</a>
+            </div>
+        </header>
+
+        <main class="">
+            <div>
+                <img src="./images/image-hero-mobile.png" alt="">
+            </div>
+
+            <div class="mt-12">
+                <div class="flex flex-col items-center text-center gap-5 px-5">
+
+                    <h1 class="font-bold text-4xl">Make remote work</h1>
+
+                    <p class="text-lg text-neutralGray">
+                        Get your team in sync, no matter your location. Streamline processes, create team rituals, and
+                        watch productivity soar.
+                    </p>
+
+                    <button class="bg-black text-white font-bold px-6 py-4 rounded-2xl text-xl mt-4">Learn more</button>
+                </div>
+
+                <div class="flex items-center 
+                            justify-between p-5 mt-12">
+
+                    <img class="w-20" src="./images/client-databiz.svg" alt="">
+                    <img class="w-12" src="./images/client-audiophile.svg" alt="">
+                    <img class="w-16" src="./images/client-meet.svg" alt="">
+                    <img class="w-16" src="./images/client-maker.svg" alt="">
+                </div>
+            </div>
+        </main>
     </div>
-    
+
+
+    <script>
+        const menuOpen = document.getElementById('menuOpen');
+        const menuClose = document.getElementById('menuClose');
+        const link = document.getElementById('links');
+
+        menuOpen.addEventListener('click', () => {
+            link.style.display = 'block';
+            menuOpen.style.display = 'none';
+            menuClose.style.display = 'block';
+            document.body.classList.add('bg-black', 'bg-opacity-50', 'transition-all', 'duration-300');
+        });
+
+        menuClose.addEventListener('click', () => {
+            link.style.display = 'none';
+            menuOpen.style.display = 'block';
+            menuClose.style.display = 'none';
+            document.body.classList.remove('bg-black', 'bg-opacity-50', 'transition-all', 'duration-300');
+        })
+    </script>
+
 </body>
+
 </html>

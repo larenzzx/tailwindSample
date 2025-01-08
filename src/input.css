@@ -10,4 +10,12 @@
     .btn {
         @apply m-2 bg-slate-600 py-2 px-4 rounded-md text-white text-sm font-medium mt-8 hover:bg-red-300
     }
+
+    .navs {
+        @apply mb-4 text-neutralGray text-lg
+    }
+
+    .regBtn {
+        @apply border-2 border-neutralGray w-full text-center rounded-2xl py-2
+    }
 }

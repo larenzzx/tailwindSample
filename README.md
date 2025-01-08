@@ -29,4 +29,15 @@ to make your own utilitiy classes or save all the utility classes in one class t
 put all the utility classes after the @apply
 
 
+In tailwin.config you can also add a utility class or custom class.
+theme: {
+    extend: {
+      colors: {
+        neutralGray: 'hsl(0, 0%, 41%)',
+      },
+    },
+  },
+then you call it (text-neutralGray)
+
+
 if you install tailwind in react or vite, you can use the ./ instead of myProject so it will install the packages inside the current folder and will not create a new directory
