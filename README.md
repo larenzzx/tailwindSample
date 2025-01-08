@@ -12,10 +12,11 @@ by adding the "dev" then pasting the command u can simply run it using "npm run 
 
 "scripts": 
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tailwindcss -i ./src/input.css -o ./src/style.css --watch"
+    "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
 
-also add a build in the package.json on the scripts after the dev. this is not required. deployment will still work on vercel.app but in the github it cannot deploy even using this.
+also add a build in the package.json on the scripts after the dev. then link in the html.
 "build": "tailwindcss -i ./src/input.css -o ./dist/style.css --minify"
+- npm run build (use this command to apply the style)
 
 
 to make your own utilitiy classes or save all the utility classes in one class to reuse it, just add a @layer components in input.css file
