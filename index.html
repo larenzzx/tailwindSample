@@ -18,7 +18,7 @@
                 <img class="cursor-pointer" src="./assets/images/logo.svg" alt="snap_logo">
 
                 <!-- open menu -->
-                <img class="cursor-pointer" id="menuOpen" src="./assets/images/icon-menu.svg" alt="">
+                <img class="cursor-pointer lg:hidden" id="menuOpen" src="./assets/images/icon-menu.svg" alt="">
 
                 <!-- links -->
                 <ul class="hidden fixed top-0 right-0 h-screen w-[65%] py-8 px-6 bg-white z-50" id="links">
@@ -105,12 +105,17 @@
             </div>
         </header>
 
-        <main class="">
-            <div>
-                <img src="./assets/images/image-hero-mobile.png" alt="">
+        <!-- hero -->
+        <main class="lg:container lg:mx-auto lg:flex flex-row-reverse">
+            <div class="border border-red-500">
+                <!-- mobile -->
+                <img class="mx-auto lg:hidden" src="./assets/images/image-hero-mobile.png" alt="">
+
+                <!-- desktop -->
+                <img class="hidden lg:block w-[500px] h-[500px]" src="./assets/images/image-hero-desktop.png" alt="">
             </div>
 
-            <div class="mt-12">
+            <div class="mt-12 border border-red-500 lg:flex flex-col justify-between">
                 <div class="flex flex-col items-center text-center gap-5 px-5">
 
                     <h1 class="font-bold text-4xl">Make remote work</h1>
@@ -126,10 +131,10 @@
                 <div class="flex items-center 
                             justify-between p-5 mt-12">
 
-                    <img class="w-20" src="./images/client-databiz.svg" alt="">
-                    <img class="w-12" src="./images/client-audiophile.svg" alt="">
-                    <img class="w-16" src="./images/client-meet.svg" alt="">
-                    <img class="w-16" src="./images/client-maker.svg" alt="">
+                    <img class="w-20" src="./assets/images/client-databiz.svg" alt="">
+                    <img class="w-12" src="./assets/images/client-audiophile.svg" alt="">
+                    <img class="w-16" src="./assets/images/client-meet.svg" alt="">
+                    <img class="w-16" src="./assets/images/client-maker.svg" alt="">
                 </div>
             </div>
         </main>
