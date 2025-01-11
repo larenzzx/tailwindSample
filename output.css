@@ -1807,6 +1807,10 @@ a:hover{
   margin-top: 2rem;
 }
 
+.mt-6{
+  margin-top: 1.5rem;
+}
+
 .block{
   display: block;
 }
@@ -2002,6 +2006,12 @@ a:hover{
   }
 }
 
+@media (min-width: 768px){
+  .md\:mt-2{
+    margin-top: 0.5rem;
+  }
+}
+
 @media (min-width: 1024px){
   .lg\:static{
     position: static;
@@ -2033,6 +2043,26 @@ a:hover{
 
   .lg\:mt-6{
     margin-top: 1.5rem;
+  }
+
+  .lg\:mt-2{
+    margin-top: 0.5rem;
+  }
+
+  .lg\:mt-1{
+    margin-top: 0.25rem;
+  }
+
+  .lg\:mt-0{
+    margin-top: 0px;
+  }
+
+  .lg\:mt-24{
+    margin-top: 6rem;
+  }
+
+  .lg\:mt-20{
+    margin-top: 5rem;
   }
 
   .lg\:block{
@@ -2091,18 +2121,13 @@ a:hover{
     border-radius: 0.5rem;
   }
 
-  .lg\:bg-transparent{
-    background-color: transparent;
-  }
-
-  .lg\:bg-white{
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-  }
-
   .lg\:bg-base-100{
     --tw-bg-opacity: 1;
     background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+  }
+
+  .lg\:bg-transparent{
+    background-color: transparent;
   }
 
   .lg\:p-0{
@@ -2122,5 +2147,21 @@ a:hover{
     --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  @media (min-width: 1280px){
+    .lg\:xl\:mt-24{
+      margin-top: 6rem;
+    }
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:mt-6{
+    margin-top: 1.5rem;
+  }
+
+  .xl\:mt-24{
+    margin-top: 6rem;
   }
 }
