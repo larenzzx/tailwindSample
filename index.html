@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -14,50 +14,55 @@
         <!-- header -->
         <header class="px-6 py-8 lg:flex lg:justify-between lg:items-center">
             <!-- logo and links -->
-            <div class="flex items-center justify-between">
-                <img class="cursor-pointer" src="./assets/images/logo.svg" alt="snap_logo">
+            <div class="flex items-center justify-between gap-5">
+                <div class="mt-1">
+                    <img class="cursor-pointer" src="./assets/images/logo.svg" alt="snap_logo">
+                </div>
 
                 <!-- open menu -->
                 <img class="cursor-pointer lg:hidden" id="menuOpen" src="./assets/images/icon-menu.svg" alt="">
 
                 <!-- links -->
                 <ul class="hidden fixed top-0 right-0 h-screen w-[65%] py-8 px-6 bg-white z-50
-                            lg:flex lg:static lg:bg-transparent lg:h-auto lg:items-center lg:w-auto lg:p-0 lg:gap-8 border border-red-500" 
-                id="links">
+                            lg:flex lg:static lg:bg-transparent lg:h-auto lg:items-center lg:w-auto lg:p-0 lg:gap-8"
+                    id="links">
 
                     <!-- close menu -->
                     <div class="flex flex-row-reverse">
-                        <img class="hidden cursor-pointer" id="menuClose" src="./assets/images/icon-close-menu.svg" alt="">
+                        <img class="hidden cursor-pointer" id="menuClose" src="./assets/images/icon-close-menu.svg"
+                            alt="">
                     </div>
 
 
                     <li class="navs mt-8 cursor-pointer lg:m-0">
                         <div class="flex items-center gap-4">
-                            <p class="dropdown">Features</p>
+                            <p class="dropdown navi">Features</p>
 
                             <!-- arrow down -->
                             <span class="arrowDown mt-1"><img src="./assets/images/icon-arrow-down.svg" alt=""></span>
 
                             <!-- arrow up -->
-                            <span class="arrowUp hidden mt-1"><img src="./assets/images/icon-arrow-up.svg" alt=""></span>
+                            <span class="arrowUp hidden mt-1"><img src="./assets/images/icon-arrow-up.svg"
+                                    alt=""></span>
                         </div>
 
                         <!-- dropdowns -->
-                        <ul class="drop hidden py-4 px-6">
+                        <ul
+                            class="drop hidden py-4 px-6 lg:absolute lg:left-20 lg:bg-white lg:shadow-2xl lg:rounded-lg">
                             <!-- sublist -->
-                            <li class="flex items-center gap-3 mt-2">
+                            <li class="flex items-center gap-3 mt-2 subNavi">
                                 <span><img src="./assets/images/icon-todo.svg" alt=""></span>
                                 Todo List
                             </li>
-                            <li class="flex items-center gap-3 mt-2">
+                            <li class="flex items-center gap-3 mt-2 subNavi">
                                 <span><img src="./assets/images/icon-calendar.svg" alt=""></span>
                                 Calendar
                             </li>
-                            <li class="flex items-center gap-3 mt-2">
+                            <li class="flex items-center gap-3 mt-2 subNavi">
                                 <span><img src="./assets/images/icon-reminders.svg" alt=""></span>
                                 Reminders
                             </li>
-                            <li class="flex items-center gap-3 mt-2">
+                            <li class="flex items-center gap-3 mt-2 subNavi">
                                 <span><img src="./assets/images/icon-planning.svg" alt=""></span>
                                 Planning
                             </li>
@@ -67,26 +72,28 @@
 
                     <li class="navs cursor-pointer lg:m-0">
                         <div class="flex items-center gap-4">
-                            <p class="dropdown">Company</p>
+                            <p class="dropdown navi">Company</p>
 
                             <!-- arrow down -->
                             <span class="arrowDown mt-1"><img src="./assets/images/icon-arrow-down.svg" alt=""></span>
 
                             <!-- arrow up -->
-                            <span class="arrowUp hidden mt-1"><img src="./assets/images/icon-arrow-up.svg" alt=""></span>
+                            <span class="arrowUp hidden mt-1"><img src="./assets/images/icon-arrow-up.svg"
+                                    alt=""></span>
                         </div>
 
                         <!-- dropdowns -->
-                        <ul class="drop hidden py-4 px-6">
-                            <li class="mt-2">History</li>
-                            <li class="mt-2">Our Team</li>
-                            <li class="mt-2">Blog</li>
+                        <ul
+                            class="drop hidden py-4 px-6 lg:absolute lg:left-64 lg:bg-white lg:shadow-2xl lg:rounded-lg">
+                            <li class="mt-2 subNavi">History</li>
+                            <li class="mt-2 subNavi">Our Team</li>
+                            <li class="mt-2 subNavi">Blog</li>
                         </ul>
                     </li>
 
                     <!-- basic links -->
-                    <li class="navs cursor-pointer lg:m-0">Careers</li>
-                    <li class="navs cursor-pointer lg:m-0">About</li>
+                    <li class="navs cursor-pointer lg:m-0 navi">Careers</li>
+                    <li class="navs cursor-pointer lg:m-0 navi">About</li>
 
 
                     <!-- cta -->
@@ -101,114 +108,49 @@
             </div>
 
             <!-- cta -->
-            <div class="hidden lg:block">
+            <div class="hidden lg:block text-neutralGray space-x-10">
                 <a href="#">Login</a>
                 <a class="regBtn" href="#">Register</a>
             </div>
         </header>
 
-        
-        <!-- hero -->
-        <main class="lg:container lg:mx-auto lg:grid lg:grid-cols-2 xl:mt-4">
-            <div class="lg:order-last lg:w-[70%] lg:place-self-center">
+
+        <div class="hero lg:mt-6">
+            <div class="hero-content flex-col lg:flex-row-reverse lg:justify-around">
                 <!-- mobile -->
-                <img class="mx-auto lg:hidden" src="./assets/images/image-hero-mobile.png" alt="">
-
+                <img class="lg:hidden" src="./assets/images/image-hero-mobile.png" alt="" />
                 <!-- desktop -->
-                <img class="hidden lg:block" src="./assets/images/image-hero-desktop.png" alt="">
-            </div>
+                <img class="max-w-sm hidden lg:block" src="./assets/images/image-hero-desktop.png" alt="" />
+                
+                <div class="lg:w-1/2 mt-5 lg:mt-16">
+                    <h1 class="text-black text-center lg:text-left text-3xl lg:text-7xl font-bold">Make <span class="lg:block">remote
+                            work</span></h1>
 
-            <div class="mt-12 flex flex-col justify-between">
-                <div class="flex flex-col items-center text-center gap-5 px-5 lg:text-left lg:items-start lg:gap-8 xl:gap-12 lg:px-16">
-
-                    <h1 class="font-bold text-4xl lg:text-6xl xl:text-7xl">Make <span class="inline lg:block">remote work</span></h1>
-
-                    <p class="text-lg text-neutralGray lg:w-[80%]">
+                    <p class="py-6 lg:w-[68%] text-center lg:text-left lg:mt-4 font-medium text-neutralGray">
                         Get your team in sync, no matter your location. Streamline processes, create team rituals, and
                         watch productivity soar.
                     </p>
 
-                    <button class="bg-black text-white font-bold px-6 py-4 rounded-2xl text-xl mt-4">Learn more</button>
-                </div>
+                    <div class="grid place-items-center lg:place-items-start">
+                        <button class="cta mt-4">Learn more</button>
+                    </div>
 
-                <div class="flex items-center 
-                            justify-between p-5 mt-12 lg:px-16">
+                    <div class="flex items-center 
+                    justify-between mt-24">
 
-                    <img class="w-20" src="./assets/images/client-databiz.svg" alt="">
-                    <img class="w-12" src="./assets/images/client-audiophile.svg" alt="">
-                    <img class="w-16" src="./assets/images/client-meet.svg" alt="">
-                    <img class="w-16" src="./assets/images/client-maker.svg" alt="">
+                        <img class="w-20 sm:w-auto" src="./assets/images/client-databiz.svg" alt="">
+                        <img class="w-12 sm:w-auto" src="./assets/images/client-audiophile.svg" alt="">
+                        <img class="w-16 sm:w-auto" src="./assets/images/client-meet.svg" alt="">
+                        <img class="w-16 sm:w-auto" src="./assets/images/client-maker.svg" alt="">
+                    </div>
                 </div>
             </div>
-        </main>
+        </div>
     </div>
 
 
-    <script>
-        const menuOpen = document.getElementById('menuOpen');
-        const menuClose = document.getElementById('menuClose');
-        const link = document.getElementById('links');
 
-        const dropdown = document.querySelectorAll('.dropdown');
-        const arrowDown = document.querySelectorAll('.arrowDown');
-        const arrowUp = document.querySelectorAll('.arrowUp');
-        const drop = document.querySelectorAll('.drop');
-
-        menuOpen.addEventListener('click', () => {
-            link.style.display = 'block';
-            menuOpen.style.display = 'none';
-            menuClose.style.display = 'block';
-            document.body.classList.add('bg-black', 'bg-opacity-50', 'transition-all', 'duration-300');
-        });
-
-        menuClose.addEventListener('click', () => {
-            link.style.display = 'none';
-            menuOpen.style.display = 'block';
-            menuClose.style.display = 'none';
-            document.body.classList.remove('bg-black', 'bg-opacity-50', 'transition-all', 'duration-300');
-
-
-            // this will hide the open dropdowns when the menuClose is clicked
-            arrowUp.forEach(arrowUps => {
-                arrowUps.classList.add('hidden');
-            });
-
-            arrowDown.forEach(arrowDowns => {
-                arrowDowns.classList.remove('hidden');
-            });
-
-            drop.forEach(drops => {
-                drops.classList.add('hidden');
-            });
-
-        });
-
-
-        // dropdowns with two nodelist or querySelectorAll
-        dropdown.forEach((dropdowns, index) => {
-            dropdowns.addEventListener('click', () => {
-
-                // checks first if the arrowUp is hidden
-                if (arrowUp[index].classList.contains('hidden')) {
-
-                    // hides the arrow up then shows the arrow down
-                    arrowDown[index].classList.add('hidden');
-                    arrowUp[index].classList.remove('hidden');
-
-                    // shows the dropdowns
-                    drop[index].classList.remove('hidden');
-                } else {
-
-                    // shows the arrow up then hides the arrowDown
-                    arrowDown[index].classList.remove('hidden');
-                    arrowUp[index].classList.add('hidden');
-
-                    // hides the dropdown
-                    drop[index].classList.add('hidden');
-                }
-            });
-        });
-    </script>
+    <script src="./script.js"></script>
 
 </body>
 

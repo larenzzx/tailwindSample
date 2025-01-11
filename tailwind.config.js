@@ -7,8 +7,11 @@ module.exports = {
         neutralGray: 'hsl(0, 0%, 41%)',
       },
     },
+    fontFamily: {
+      Epi: ["Epilogue", "serif"]
+    },
   },
   plugins: [
-    require('@tailwindcss/aspect-ratio'),
+    require('daisyui'),
   ],
 }

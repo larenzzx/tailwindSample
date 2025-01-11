@@ -1,21 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
-    .card {
-        @apply m-10 rounded-lg bg-white px-6 py-8 shadow-xl
+    
+    body {
+        @apply font-Epi
     }
 
-    .btn {
-        @apply m-2 bg-slate-600 py-2 px-4 rounded-md text-white text-sm font-medium mt-8 hover:bg-red-300
+    .cta {
+        @apply bg-black text-white font-semibold px-5 py-2 rounded-xl text-lg mt-4 duration-300
+    }
+
+    .cta:hover {
+        @apply bg-transparent border border-black text-black
     }
 
     .navs {
-        @apply mb-4 text-neutralGray text-lg
+        @apply mb-4 text-neutralGray text-lg duration-300
+    }
+    
+    .navi:hover {
+        @apply text-black
+    }
+
+    .subNavi:hover {
+        @apply text-black
     }
 
     .regBtn {
-        @apply border-2 border-neutralGray w-full text-center rounded-2xl py-2
+        @apply border-2 border-neutralGray w-full text-center rounded-xl py-2 px-5 duration-300
     }
+
+    .regBtn:hover {
+        @apply border-black
+    }
+
+    a:hover {
+        @apply text-black
+    }
+
+    
 }
