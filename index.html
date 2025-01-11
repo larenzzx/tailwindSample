@@ -12,7 +12,7 @@
 <body>
     <div class="h-screen">
         <!-- header -->
-        <header class="px-6 py-8">
+        <header class="px-6 py-8 lg:flex lg:justify-between lg:items-center">
             <!-- logo and links -->
             <div class="flex items-center justify-between">
                 <img class="cursor-pointer" src="./assets/images/logo.svg" alt="snap_logo">
@@ -21,7 +21,9 @@
                 <img class="cursor-pointer lg:hidden" id="menuOpen" src="./assets/images/icon-menu.svg" alt="">
 
                 <!-- links -->
-                <ul class="hidden fixed top-0 right-0 h-screen w-[65%] py-8 px-6 bg-white z-50" id="links">
+                <ul class="hidden fixed top-0 right-0 h-screen w-[65%] py-8 px-6 bg-white z-50
+                            lg:flex lg:static lg:bg-transparent lg:h-auto lg:items-center lg:w-auto lg:p-0 lg:gap-8 border border-red-500" 
+                id="links">
 
                     <!-- close menu -->
                     <div class="flex flex-row-reverse">
@@ -29,7 +31,7 @@
                     </div>
 
 
-                    <li class="navs mt-8 cursor-pointer">
+                    <li class="navs mt-8 cursor-pointer lg:m-0">
                         <div class="flex items-center gap-4">
                             <p class="dropdown">Features</p>
 
@@ -63,7 +65,7 @@
                     </li>
 
 
-                    <li class="navs cursor-pointer">
+                    <li class="navs cursor-pointer lg:m-0">
                         <div class="flex items-center gap-4">
                             <p class="dropdown">Company</p>
 
@@ -83,12 +85,12 @@
                     </li>
 
                     <!-- basic links -->
-                    <li class="navs cursor-pointer">Careers</li>
-                    <li class="navs cursor-pointer">About</li>
+                    <li class="navs cursor-pointer lg:m-0">Careers</li>
+                    <li class="navs cursor-pointer lg:m-0">About</li>
 
 
                     <!-- cta -->
-                    <li class="navs mt-8">
+                    <li class="navs mt-8 lg:hidden">
                         <div class="flex flex-col items-center gap-4">
                             <a href="#">Login</a>
                             <a class="regBtn" href="#">Register</a>
@@ -99,28 +101,29 @@
             </div>
 
             <!-- cta -->
-            <div class="hidden">
+            <div class="hidden lg:block">
                 <a href="#">Login</a>
                 <a class="regBtn" href="#">Register</a>
             </div>
         </header>
 
+        
         <!-- hero -->
-        <main class="lg:container lg:mx-auto lg:flex flex-row-reverse">
-            <div class="border border-red-500">
+        <main class="lg:container lg:mx-auto lg:grid lg:grid-cols-2 xl:mt-4">
+            <div class="lg:order-last lg:w-[70%] lg:place-self-center">
                 <!-- mobile -->
                 <img class="mx-auto lg:hidden" src="./assets/images/image-hero-mobile.png" alt="">
 
                 <!-- desktop -->
-                <img class="hidden lg:block w-[500px] h-[500px]" src="./assets/images/image-hero-desktop.png" alt="">
+                <img class="hidden lg:block" src="./assets/images/image-hero-desktop.png" alt="">
             </div>
 
-            <div class="mt-12 border border-red-500 lg:flex flex-col justify-between">
-                <div class="flex flex-col items-center text-center gap-5 px-5">
+            <div class="mt-12 flex flex-col justify-between">
+                <div class="flex flex-col items-center text-center gap-5 px-5 lg:text-left lg:items-start lg:gap-8 xl:gap-12 lg:px-16">
 
-                    <h1 class="font-bold text-4xl">Make remote work</h1>
+                    <h1 class="font-bold text-4xl lg:text-6xl xl:text-7xl">Make <span class="inline lg:block">remote work</span></h1>
 
-                    <p class="text-lg text-neutralGray">
+                    <p class="text-lg text-neutralGray lg:w-[80%]">
                         Get your team in sync, no matter your location. Streamline processes, create team rituals, and
                         watch productivity soar.
                     </p>
@@ -129,7 +132,7 @@
                 </div>
 
                 <div class="flex items-center 
-                            justify-between p-5 mt-12">
+                            justify-between p-5 mt-12 lg:px-16">
 
                     <img class="w-20" src="./assets/images/client-databiz.svg" alt="">
                     <img class="w-12" src="./assets/images/client-audiophile.svg" alt="">
