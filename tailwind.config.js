@@ -11,6 +11,9 @@ module.exports = {
       Epi: ["Epilogue", "serif"]
     },
   },
+  daisyui: {
+    themes: ["light", "dark", "cupcake", "dim"],
+  },
   plugins: [
     require('daisyui'),
   ],
