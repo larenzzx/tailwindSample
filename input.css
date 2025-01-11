@@ -11,11 +11,11 @@
     }
 
     .cta {
-        @apply bg-black text-white font-semibold px-5 py-2 rounded-xl text-lg mt-4 duration-300
+        @apply text-white font-semibold px-5 py-2 rounded-xl text-lg mt-4 duration-300
     }
 
     .cta:hover {
-        @apply bg-transparent border border-black text-black
+        @apply bg-transparent border border-accent-content text-accent-content
     }
 
     .navs {
@@ -23,11 +23,11 @@
     }
     
     .navi:hover {
-        @apply text-black
+        @apply text-accent-content
     }
 
     .subNavi:hover {
-        @apply text-black
+        @apply text-accent-content
     }
 
     .regBtn {
@@ -35,11 +35,11 @@
     }
 
     .regBtn:hover {
-        @apply border-black
+        @apply border-accent-content
     }
 
     a:hover {
-        @apply text-black
+        @apply text-accent-content
     }
 
     
