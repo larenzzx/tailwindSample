@@ -1791,6 +1791,10 @@ a:hover{
   margin-top: 0.5rem;
 }
 
+.mt-24{
+  margin-top: 6rem;
+}
+
 .mt-4{
   margin-top: 1rem;
 }
@@ -1801,10 +1805,6 @@ a:hover{
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-24{
-  margin-top: 6rem;
 }
 
 .block{
@@ -1926,6 +1926,14 @@ a:hover{
 
 .fill-current{
   fill: currentColor;
+}
+
+.fill-base-content{
+  fill: var(--fallback-bc,oklch(var(--bc)/1));
+}
+
+.fill-primary{
+  fill: var(--fallback-p,oklch(var(--p)/1));
 }
 
 .px-6{
