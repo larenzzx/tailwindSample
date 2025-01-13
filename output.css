@@ -1831,6 +1831,10 @@ a:hover{
   height: 100vh;
 }
 
+.h-8{
+  height: 2rem;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -1849,6 +1853,10 @@ a:hover{
 
 .w-\[65\%\]{
   width: 65%;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .max-w-sm{
@@ -1924,16 +1932,12 @@ a:hover{
   --tw-bg-opacity: 0.5;
 }
 
-.fill-current{
-  fill: currentColor;
-}
-
 .fill-base-content{
   fill: var(--fallback-bc,oklch(var(--bc)/1));
 }
 
-.fill-primary{
-  fill: var(--fallback-p,oklch(var(--p)/1));
+.fill-current{
+  fill: currentColor;
 }
 
 .px-6{
